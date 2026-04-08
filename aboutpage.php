@@ -147,7 +147,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </div>
           <h3 class="feature-title">Email Address</h3>
-          <p class="feature-description"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3d0dcddc7d2d0c7f3c0ded2c1c7d7c1dac5d69dd0dcde">[email&#160;protected]</a></p>
+          <p class="feature-description"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="65060a0b1104061125160804171101170c13004b060a08">[email&#160;protected]</a></p>
         </div>
       </div>
     </div>
@@ -368,9 +368,7 @@
       <div class="modal-header">
         <h2 id="legal-modal-title"></h2>
         <span class="close-btn" id="close-legal-modal">&times;</span>
-      </div>
-      <div class="modal-body" id="legal-modal-body" style="max-height: 70vh; overflow-y: auto;">
-        <!-- Content will be injected by JavaScript -->
+      </dill be injected by JavaScript -->
       </div>
       <div class="modal-footer">
         <p style="font-size: 0.8rem; color: var(--muted);">Last Updated: March 15, 2026</p>
@@ -378,7 +376,7 @@
     </div>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="shared.js"></script>
+  <script defer src="shared.js"></script>
   <script>
     // Hero Carousel for About Page
     document.addEventListener('DOMContentLoaded', function() {
@@ -413,4 +411,14 @@
             e.preventDefault();
             const contactSection = document.querySelector('.section-title');
             // Find the "Contact Us" section and scroll to it
-            document.querySelectorAll('.section-title').forEach(tit
+            document.querySelectorAll('.section-title').forEach(title => {
+                if (title.textContent.trim() === 'Contact Us') {
+                    title.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+  </script>
+
+</body>
+</html>
